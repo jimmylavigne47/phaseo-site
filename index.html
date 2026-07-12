@@ -28,7 +28,7 @@
 
   header { position:sticky; top:0; z-index:50; background:rgba(9,9,11,0.82);
            backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
-  nav { max-width:1060px; margin:0 auto; padding:10px 18px;
+  nav { max-width:1160px; margin:0 auto; padding:10px 18px;
         display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap; }
   @media (max-width:680px) {
     nav { padding:10px 14px; row-gap:4px; }
@@ -46,13 +46,15 @@
 
   .view { display:none; }
   .view.on { display:block; }
-  main section { max-width:1060px; margin:0 auto; padding:64px 18px; }
+  main section { max-width:1160px; margin:0 auto; padding:72px 20px; }
+  @media (max-width:680px) { main section { padding:48px 16px; } }
 
-  .hero { min-height:72vh; display:flex; flex-direction:column; justify-content:center; }
+  .hero { min-height:min(72vh, 640px); display:flex; flex-direction:column; justify-content:center; }
+  @media (max-width:680px) { .hero { min-height:min(78vh, 560px); } }
   .badge { display:inline-flex; align-items:center; gap:8px; color:var(--orange-soft);
            font-size:13px; font-weight:500; letter-spacing:0.06em; margin-bottom:18px; }
   .badge::before { content:""; width:6px; height:6px; border-radius:99px; background:var(--orange); }
-  h1 { font-size:clamp(34px,7vw,62px); font-weight:800; letter-spacing:-0.025em;
+  h1 { font-size:clamp(34px,6vw,72px); font-weight:800; letter-spacing:-0.025em;
        line-height:1.05; text-wrap:balance; margin-bottom:18px; }
   h1 em { font-style:normal; color:var(--orange); }
   .lede { color:var(--muted); font-size:clamp(15px,2.4vw,18px); max-width:52ch; margin-bottom:30px; }
@@ -71,6 +73,7 @@
 
   .grid2 { display:grid; grid-template-columns:repeat(auto-fit,minmax(270px,1fr)); gap:16px; }
   .grid3 { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:16px; }
+  @media (max-width:680px) { .card { padding:20px; } .contact-band { padding:32px 20px; } }
   .card { border:1px solid rgba(255,255,255,0.13); border-radius:18px; padding:26px;
           background:linear-gradient(135deg, rgba(255,255,255,0.09), rgba(255,255,255,0.03) 55%, rgba(255,122,26,0.05));
           backdrop-filter:blur(16px) saturate(150%); -webkit-backdrop-filter:blur(16px) saturate(150%);
@@ -223,7 +226,7 @@
 
 <!-- ================= ELEC / DOMOTIQUE ================= -->
 <div class="view" id="view-elec">
-  <section class="hero mesh" style="min-height:52vh">
+  <section class="hero mesh" style="min-height:min(52vh, 460px)">
     <span class="badge">P&ocirc;le &eacute;lectricit&eacute; &mdash; Guillaume Baudet</span>
     <h1>&Eacute;lectricit&eacute; <em>&amp; domotique</em></h1>
     <p class="lede">Installation, r&eacute;novation et maison connect&eacute;e, dans les r&egrave;gles de l'art
@@ -266,7 +269,7 @@
 
 <!-- ================= SON & LUMIERE ================= -->
 <div class="view" id="view-sono">
-  <section class="hero mesh" style="min-height:52vh">
+  <section class="hero mesh" style="min-height:min(52vh, 460px)">
     <span class="badge">P&ocirc;le &eacute;v&eacute;nementiel &mdash; Dorian Jardinier</span>
     <h1>Son <em>&amp; lumi&egrave;re</em></h1>
     <p class="lede">Sonorisation, &eacute;clairage sc&eacute;nique et r&eacute;gie technique pour vos
