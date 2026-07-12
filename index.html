@@ -62,6 +62,14 @@
           border:1px solid rgba(255,255,255,0.08);
           box-shadow:inset 0 1px 0 rgba(255,255,255,0.10); }
   @media (max-width:680px) { .hero { min-height:min(78vh, 560px); width:calc(100% - 20px); margin-top:10px; } }
+  .hero { position:relative; }
+  .hero > * { position:relative; z-index:1; }
+  .logo-hero { position:absolute; z-index:0 !important; right:clamp(12px,6vw,90px); top:50%;
+               transform:translateY(-50%); height:min(44vh,360px); opacity:0.32; pointer-events:none;
+               filter:drop-shadow(0 0 34px rgba(255,122,26,0.45)); }
+  @media (max-width:680px) { .logo-hero { height:130px; top:24px; right:14px; transform:none; opacity:0.25; } }
+  .logo-band { height:46px; display:block; margin:0 auto 16px;
+               filter:drop-shadow(0 0 16px rgba(255,122,26,0.45)); }
   .badge { display:inline-flex; align-items:center; gap:8px; color:var(--orange-soft);
            font-size:13px; font-weight:500; letter-spacing:0.06em; margin-bottom:18px; }
   .badge::before { content:""; width:6px; height:6px; border-radius:99px; background:var(--orange); }
@@ -156,6 +164,12 @@
 <!-- ================= ACCUEIL ================= -->
 <div class="view" id="view-home">
   <section class="hero mesh">
+    <svg viewBox="-100 -100 200 200" class="logo-hero" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
+  <polygon points="0.00,-88.00 -76.21,-44.00 -76.21,44.00 -0.00,88.00 76.21,44.00 76.21,-44.00" stroke="#FF7A1A" stroke-width="5" stroke-linejoin="round"/>
+  <polygon points="0.00,-72.00 -62.35,-36.00 -62.35,36.00 -0.00,72.00 62.35,36.00 62.35,-36.00" stroke="#FF7A1A" stroke-width="1.8" stroke-linejoin="round" stroke-dasharray="7 5.5"/>
+  <path d="M -20.93 -26.79 A 34.00 34.00 0 1 0 20.93 -26.79" stroke="#FF7A1A" stroke-width="6.5" stroke-linecap="round"/>
+  <line x1="0" y1="-52" x2="0" y2="-14" stroke="#FF7A1A" stroke-width="6.5" stroke-linecap="round"/>
+</svg>
     <span class="badge">Bordeaux &amp; Gironde &mdash; particuliers et professionnels</span>
     <h1>Toujours <em>en phase</em> avec vos projets.</h1>
     <p class="lede">&Eacute;lectricit&eacute;, domotique et son &amp; lumi&egrave;re : une seule &eacute;quipe,
@@ -224,6 +238,12 @@
 
   <section>
     <div class="contact-band mesh">
+      <svg viewBox="-100 -100 200 200" class="logo-band" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
+  <polygon points="0.00,-88.00 -76.21,-44.00 -76.21,44.00 -0.00,88.00 76.21,44.00 76.21,-44.00" stroke="#FF7A1A" stroke-width="5" stroke-linejoin="round"/>
+  <polygon points="0.00,-72.00 -62.35,-36.00 -62.35,36.00 -0.00,72.00 62.35,36.00 62.35,-36.00" stroke="#FF7A1A" stroke-width="1.8" stroke-linejoin="round" stroke-dasharray="7 5.5"/>
+  <path d="M -20.93 -26.79 A 34.00 34.00 0 1 0 20.93 -26.79" stroke="#FF7A1A" stroke-width="6.5" stroke-linecap="round"/>
+  <line x1="0" y1="-52" x2="0" y2="-14" stroke="#FF7A1A" stroke-width="6.5" stroke-linecap="round"/>
+</svg>
       <h2>Un projet &agrave; brancher ?</h2>
       <p>D&eacute;crivez-nous votre besoin, on revient vers vous rapidement avec un chiffrage clair.</p>
       <a class="btn" href="mailto:contact.phaseo@gmail.com">contact.phaseo@gmail.com</a>
@@ -238,6 +258,12 @@
 <!-- ================= ELEC / DOMOTIQUE ================= -->
 <div class="view" id="view-elec">
   <section class="hero mesh" style="min-height:min(52vh, 460px)">
+    <svg viewBox="-100 -100 200 200" class="logo-hero" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
+  <polygon points="0.00,-88.00 -76.21,-44.00 -76.21,44.00 -0.00,88.00 76.21,44.00 76.21,-44.00" stroke="#FF7A1A" stroke-width="5" stroke-linejoin="round"/>
+  <polygon points="0.00,-72.00 -62.35,-36.00 -62.35,36.00 -0.00,72.00 62.35,36.00 62.35,-36.00" stroke="#FF7A1A" stroke-width="1.8" stroke-linejoin="round" stroke-dasharray="7 5.5"/>
+  <path d="M -20.93 -26.79 A 34.00 34.00 0 1 0 20.93 -26.79" stroke="#FF7A1A" stroke-width="6.5" stroke-linecap="round"/>
+  <line x1="0" y1="-52" x2="0" y2="-14" stroke="#FF7A1A" stroke-width="6.5" stroke-linecap="round"/>
+</svg>
     <span class="badge">P&ocirc;le &eacute;lectricit&eacute; &mdash; Guillaume Baudet</span>
     <h1>&Eacute;lectricit&eacute; <em>&amp; domotique</em></h1>
     <p class="lede">Installation, r&eacute;novation et maison connect&eacute;e, dans les r&egrave;gles de l'art
@@ -270,6 +296,12 @@
 
   <section>
     <div class="contact-band mesh">
+      <svg viewBox="-100 -100 200 200" class="logo-band" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
+  <polygon points="0.00,-88.00 -76.21,-44.00 -76.21,44.00 -0.00,88.00 76.21,44.00 76.21,-44.00" stroke="#FF7A1A" stroke-width="5" stroke-linejoin="round"/>
+  <polygon points="0.00,-72.00 -62.35,-36.00 -62.35,36.00 -0.00,72.00 62.35,36.00 62.35,-36.00" stroke="#FF7A1A" stroke-width="1.8" stroke-linejoin="round" stroke-dasharray="7 5.5"/>
+  <path d="M -20.93 -26.79 A 34.00 34.00 0 1 0 20.93 -26.79" stroke="#FF7A1A" stroke-width="6.5" stroke-linecap="round"/>
+  <line x1="0" y1="-52" x2="0" y2="-14" stroke="#FF7A1A" stroke-width="6.5" stroke-linecap="round"/>
+</svg>
       <h2>Parlez-nous de votre chantier.</h2>
       <p>Guillaume Baudet &mdash; DG &Eacute;lectricit&eacute;</p>
       <a class="btn" href="tel:+33683219756">06 83 21 97 56</a>
@@ -281,6 +313,12 @@
 <!-- ================= SON & LUMIERE ================= -->
 <div class="view" id="view-sono">
   <section class="hero mesh" style="min-height:min(52vh, 460px)">
+    <svg viewBox="-100 -100 200 200" class="logo-hero" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
+  <polygon points="0.00,-88.00 -76.21,-44.00 -76.21,44.00 -0.00,88.00 76.21,44.00 76.21,-44.00" stroke="#FF7A1A" stroke-width="5" stroke-linejoin="round"/>
+  <polygon points="0.00,-72.00 -62.35,-36.00 -62.35,36.00 -0.00,72.00 62.35,36.00 62.35,-36.00" stroke="#FF7A1A" stroke-width="1.8" stroke-linejoin="round" stroke-dasharray="7 5.5"/>
+  <path d="M -20.93 -26.79 A 34.00 34.00 0 1 0 20.93 -26.79" stroke="#FF7A1A" stroke-width="6.5" stroke-linecap="round"/>
+  <line x1="0" y1="-52" x2="0" y2="-14" stroke="#FF7A1A" stroke-width="6.5" stroke-linecap="round"/>
+</svg>
     <span class="badge">P&ocirc;le &eacute;v&eacute;nementiel &mdash; Dorian Jardinier</span>
     <h1>Son <em>&amp; lumi&egrave;re</em></h1>
     <p class="lede">Sonorisation, &eacute;clairage sc&eacute;nique et r&eacute;gie technique pour vos
@@ -312,6 +350,12 @@
 
   <section>
     <div class="contact-band mesh">
+      <svg viewBox="-100 -100 200 200" class="logo-band" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
+  <polygon points="0.00,-88.00 -76.21,-44.00 -76.21,44.00 -0.00,88.00 76.21,44.00 76.21,-44.00" stroke="#FF7A1A" stroke-width="5" stroke-linejoin="round"/>
+  <polygon points="0.00,-72.00 -62.35,-36.00 -62.35,36.00 -0.00,72.00 62.35,36.00 62.35,-36.00" stroke="#FF7A1A" stroke-width="1.8" stroke-linejoin="round" stroke-dasharray="7 5.5"/>
+  <path d="M -20.93 -26.79 A 34.00 34.00 0 1 0 20.93 -26.79" stroke="#FF7A1A" stroke-width="6.5" stroke-linecap="round"/>
+  <line x1="0" y1="-52" x2="0" y2="-14" stroke="#FF7A1A" stroke-width="6.5" stroke-linecap="round"/>
+</svg>
       <h2>Un &eacute;v&eacute;nement &agrave; sonoriser ?</h2>
       <p>Dorian Jardinier &mdash; DG Son &amp; Lumi&egrave;re</p>
       <a class="btn" href="tel:+33615474948">06 15 47 49 48</a>
