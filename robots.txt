@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jimmylavigne47.github.io/phaseo-site/sitemap.xml
