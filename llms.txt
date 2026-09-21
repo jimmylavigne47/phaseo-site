@@ -1,0 +1,22 @@
+# Phaseo
+
+> Entreprise d'électricité, de domotique, de sécurité électronique et de son & lumière, basée à Bordeaux (Gironde, France).
+
+## Services
+- Électricité : dépannage et remplacement sur installations existantes, remise en état de logements, vérification électrique annuelle pour les établissements recevant du public.
+- Domotique et sécurité électronique : alarmes, vidéosurveillance.
+- Son & lumière : sonorisation et éclairage d'événements, soirées, réceptions ; renfort technique pour les prestataires.
+
+## Contact
+- Téléphone électricité : +33 7 62 32 10 76
+- Téléphone son & lumière : +33 6 15 47 49 48
+- E-mail : contact.phaseo@gmail.com
+- Adresse : 57 rue du Commandant Hautreux, 33300 Bordeaux, France
+- Zone : Bordeaux Métropole et Gironde
+
+## Pages
+- [Accueil](https://jimmylavigne47.github.io/phaseo-site/)
+- [Mentions légales](https://jimmylavigne47.github.io/phaseo-site/mentions-legales.html)
+- [Confidentialité](https://jimmylavigne47.github.io/phaseo-site/confidentialite.html)
+- [Cookies](https://jimmylavigne47.github.io/phaseo-site/cookies.html)
+- [Conditions d'utilisation](https://jimmylavigne47.github.io/phaseo-site/conditions-utilisation.html)
